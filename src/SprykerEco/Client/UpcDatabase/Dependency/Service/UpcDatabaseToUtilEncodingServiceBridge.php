@@ -23,18 +23,6 @@ class UpcDatabaseToUtilEncodingServiceBridge implements UpcDatabaseToUtilEncodin
     }
 
     /**
-     * @param mixed $value
-     * @param int|null $options
-     * @param int|null $depth
-     *
-     * @return string|null
-     */
-    public function encodeJson($value, ?int $options = null, ?int $depth = null): ?string
-    {
-        return $this->utilEncodingService->encodeJson($value, $options, $depth);
-    }
-
-    /**
      * @param string $jsonValue
      * @param bool $assoc
      * @param int|null $depth

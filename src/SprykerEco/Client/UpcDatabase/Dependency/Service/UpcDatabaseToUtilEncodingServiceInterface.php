@@ -10,15 +10,6 @@ namespace SprykerEco\Client\UpcDatabase\Dependency\Service;
 interface UpcDatabaseToUtilEncodingServiceInterface
 {
     /**
-     * @param mixed $value
-     * @param int|null $options
-     * @param int|null $depth
-     *
-     * @return string|null
-     */
-    public function encodeJson($value, ?int $options = null, ?int $depth = null): ?string;
-
-    /**
      * @param string $jsonValue
      * @param bool $assoc
      * @param int|null $depth

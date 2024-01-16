@@ -28,7 +28,7 @@ class UpcDatabaseClient extends AbstractClient implements UpcDatabaseClientInter
     public function getProduct(UpcDatabaseRequestTransfer $upcDatabaseRequestTransfer): UpcDatabaseResponseTransfer
     {
         return $this->getFactory()
-            ->createApiClient()
-            ->product($upcProductRequestTransfer);
+            ->createUpcDatabaseApiClient()
+            ->getProduct($upcDatabaseRequestTransfer);
     }
 }

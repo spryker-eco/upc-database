@@ -60,7 +60,7 @@ class UpcDatabaseToGuzzleHttpClientAdapter implements UpcDatabaseToHttpClientInt
     {
         $options = [
             RequestOptions::BODY => $body,
-            RequestOptions::AUTH => [$authKey, ''],
+            RequestOptions::AUTH => ['Bearer', $authKey],
         ];
 
         try {

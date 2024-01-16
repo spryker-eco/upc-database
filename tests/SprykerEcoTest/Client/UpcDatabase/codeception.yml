@@ -13,7 +13,7 @@ coverage:
     whitelist: { include: ['../../../../src/*'] }
 
 suites:
-    Zed:
+    Client:
         path: .
         class_name: UpcDatabaseClientTester
         modules:
@@ -23,7 +23,7 @@ suites:
                 - \SprykerTest\Shared\Testify\Helper\Environment:
                       isolated: true
                 - \SprykerTest\Shared\Testify\Helper\ConfigHelper
-                - \SprykerTest\Shared\Testify\Helper\DataCleanupHelper
+#                - \SprykerTest\Shared\Testify\Helper\DataCleanupHelper
 #                - \SprykerTest\Zed\Testify\Helper\Communication\CommunicationHelper
 #                - \SprykerTest\Zed\Testify\Helper\Communication\Table\TableHelper
                 - \SprykerTest\Shared\Testify\Helper\LocatorHelper:
@@ -33,7 +33,7 @@ suites:
                           - 'SprykerEco'
                           - 'SprykerEcoTest'
                 - \SprykerTest\Shared\Testify\Helper\DependencyHelper
-                - \SprykerTest\Shared\Propel\Helper\TransactionHelper
+#                - \SprykerTest\Shared\Propel\Helper\TransactionHelper
 #                - \SprykerTest\Shared\Propel\Helper\PropelHelper:
 #                      isolated: true
 #                      schemaSourceDirectoryList:

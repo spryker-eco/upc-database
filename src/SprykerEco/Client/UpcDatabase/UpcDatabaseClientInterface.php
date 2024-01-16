@@ -15,7 +15,9 @@ interface UpcDatabaseClientInterface
 {
     /**
      * Specification:
-     * - Query UPC database for product information.
+     * - Requires `UpcDatabaseRequestTransfer.upcNumber` to be set.
+     * - Queries UPC database API for product information.
+     * - Throws `UpcDatabaseToHttpClientException` in case of HTTP errors.
      *
      * @api
      *
