@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<transfers xmlns="spryker:transfer-01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="spryker:transfer-01 http://static.spryker.com/transfer-01.xsd">
+
+    <transfer name="UpcDatabaseRequest" strict="true">
+        <property name="upcNumber" type="string"/>
+    </transfer>
+
+    <transfer name="UpcDatabaseResponse" strict="true">
+        <property name="success" type="bool"/>
+        <property name="responseError" type="UpcDatabaseResponseError"/>
+        <property name="barcode" type="string"/>
+        <property name="title" type="string"/>
+        <property name="description" type="string"/>
+        <property name="brand" type="string"/>
+        <property name="manufacturer" type="string"/>
+        <property name="category" type="string"/>
+    </transfer>
+
+    <transfer name="UpcDatabaseResponseError" strict="true">
+        <property name="code" type="string"/>
+        <property name="message" type="string"/>
+    </transfer>
+
+</transfers>
